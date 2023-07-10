@@ -1,0 +1,10 @@
+<div class="container">
+<form (ngSubmit)="AddNewUser(addNew.value)" #addNew="ngForm">
+    <h1>Register new user</h1>
+    <input type="text" name="username" placeholder="Enter Name" ngModel>
+    <input type="email" name="email" placeholder="Enter Email" ngModel>
+    <input type="password" name="password" placeholder="Enter Password" ngModel>
+    <input type="submit" value="register">
+    <a routerLink="/">Login Now</a>
+</form>
+</div>
